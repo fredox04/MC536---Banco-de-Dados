@@ -1,6 +1,7 @@
 /* ------------------------------------------------------------------
 Regiões com setor de serviços > 40 % do VAB
 proporção de pessoas que relataram “morador_insuficiente”
+Prgunta realizada: Entre regiões cujo setor de serviços > 40 % do VAB, onde se concentra a maior proporção de pessoas que relatam dificuldade de acesso a alimentos saudáveis?
 --------------------------------------------------------------------*/
 
 WITH regiao_servicos_40 AS (

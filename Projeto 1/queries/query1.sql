@@ -1,3 +1,8 @@
+/*Setor agro --> fome infantil
+Pergunta Quanto maior a participação do agro no VAB, menor (ou maior) é a proporção de crianças até 14 anos vivendo em famílias com insegurança alimentar severa?*/
+
+
+
 WITH criancas AS (
     SELECT
         f.id_regiao,
