@@ -1,15 +1,7 @@
-/* =========================================================
-   MODELAGEM FÍSICA — ODS (Objetivos de Desenvolvimento Sustentável)
-   ========================================================= */
 BEGIN;
 
--- 1.  Schema padrão
 CREATE SCHEMA IF NOT EXISTS ods;
 SET search_path TO ods, public;
-
-/* ---------------------------------------------------------
-   TABELAS DE DIMENSÃO DEMOGRÁFICA
-   --------------------------------------------------------- */
 
 -- Regiões do país
 CREATE TABLE regiao (
@@ -17,7 +9,7 @@ CREATE TABLE regiao (
     nome_regiao VARCHAR(100) NOT NULL
 );
 
--- Famílias (uma região → muitas famílias)
+-- Famílias (uma região tem muitas famílias)
 CREATE TABLE familia (
     id_familia      SERIAL PRIMARY KEY,
     id_regiao       INT NOT NULL REFERENCES regiao(id_regiao),
@@ -27,7 +19,7 @@ CREATE TABLE familia (
     acesso_internet BOOLEAN
 );
 
--- Pessoas (uma família → muitas pessoas)
+-- Pessoas (uma família tem muitas pessoas)
 CREATE TABLE pessoa (
     id_pessoa  SERIAL PRIMARY KEY,
     id_familia INT NOT NULL REFERENCES familia(id_familia),
@@ -35,25 +27,21 @@ CREATE TABLE pessoa (
     idade      INT CHECK (idade >= 0)
 );
 
-/* ---------------------------------------------------------
-   TABELAS DE SAÚDE E EDUCAÇÃO (1 : 1 com Pessoa)
-   --------------------------------------------------------- */
 
+-- Acesso à saude de cada pessoa
 CREATE TABLE acesso_saude (
     id_pessoa            INT PRIMARY KEY REFERENCES pessoa(id_pessoa),
     local_mais_frequente VARCHAR(100)
 );
 
+-- Acesso à educação de cada pessoa
 CREATE TABLE escolaridade (
     id_pessoa                INT PRIMARY KEY REFERENCES pessoa(id_pessoa),
     frequenta_escola_creche  BOOLEAN,
     matriculado              BOOLEAN
 );
 
-/* ---------------------------------------------------------
-   SEGURANÇA ALIMENTAR (1 : 1 com Família)
-   --------------------------------------------------------- */
-
+-- Segurança alimentar de cada família
 CREATE TABLE seguranca_alimentar (
     id_familia                 INT PRIMARY KEY REFERENCES familia(id_familia),
     menor_18_sentiu_fome                  BOOLEAN,
@@ -70,10 +58,8 @@ CREATE TABLE seguranca_alimentar (
     menor18_insuficiente       BOOLEAN
 );
 
-/* ---------------------------------------------------------
-   HÁBITOS ALIMENTARES (1 : 1 com Pessoa)
-   --------------------------------------------------------- */
 
+-- Alimentação de cada pessoa
 CREATE TABLE alimentacao (
     id_pessoa                           INT PRIMARY KEY REFERENCES pessoa(id_pessoa),
     consome_frutas_frequentemente       BOOLEAN,
@@ -82,15 +68,13 @@ CREATE TABLE alimentacao (
     dificuldade_acesso_alimento_saudavel BOOLEAN
 );
 
-/* ---------------------------------------------------------
-   INDICADORES ECONÔMICOS E AGREGAÇÕES
-   --------------------------------------------------------- */
 
--- Indicador econômico por região/ano
+-- Indicador econômico por região
 CREATE TABLE indicador_economico (
     id_indicador SERIAL PRIMARY KEY,
     id_regiao    INT NOT NULL REFERENCES regiao(id_regiao),
 );
+
 
 -- Impostos (tabela SEPARADA)
 CREATE TABLE impostos (
