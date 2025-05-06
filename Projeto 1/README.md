@@ -16,12 +16,14 @@ Fonte dos datasets:
 ## 🧱 Componentes Desenvolvidos
 
 ### 1. Modelo Conceitual
-
+![Modelo Conceitual](modelos/modelo_conceitual.jpg)
 
 ### 2. Modelo Relacional
+![Modelo Relacional](modelos/modelo_relacional.jpg)
 
+### 3. Modelo Físico (e o DDL)
+![Modelo Físico](modelos/modelo_fisico.jpg)
 
-### 3. Modelo Físico (DDL)
 ```sql
 BEGIN;
 
@@ -162,15 +164,15 @@ PGDATABASE=nome_do_banco
 3. Execute uma Query no seu banco de dados com o script em `modelo_fisico.sql`;
 4. Execute o script de população `populate_db.py`;
 
-## 🧠 Insights Geração das Consultas
+## 🧠 Geração das Consultas
 
 As queries foram pensadas para responder as seguintes perguntas:
 
-- Qual a relação entre participação no setor agro e insegurança alimentar infantil?
-- Entre regiões cujo setor de serviços > 40 % do VAB, onde se concentra a maior proporção de pessoas que relatam dificuldade de acesso a alimentos saudáveis?
-- 3
-- 4
-- 5
+1.  Qual a relação entre participação no setor agro e insegurança alimentar infantil?
+2.  Entre regiões cujo setor de serviços > 40 % do Valor Adicionado Bruto (VAB), onde se concentra a maior proporção de pessoas que relatam dificuldade de acesso a alimentos saudáveis?
+3.  Em quais regiões a procura por “consultório particular” ou “clínica privada” é mais frequente, e como esses percentuais se relacionam com os principais indicadores econômicos regionais (participação de serviços e indústria no VAB, PIB total e total de impostos)?
+4.  Como a renda familiar (em quartil) influencia o consumo de frutas e de ultraprocessados entre crianças (<18 anos)?
+5.  Em que medida a participação da indústria no VAB de cada região se associa à proporção de crianças (menores de 18 anos) matriculadas em escola ou creche?
 
 ---
 
