@@ -1,6 +1,9 @@
 # 🌍MC 536 - Projeto 1 de Banco de Dados:
 
 ID do grupo: 13
+Frederico Jon Campos RA:243387
+Vinicius Brito Santos Oliveira Carneiro RA:244354
+
 Tema do projeto: Análise de fatores econômicos e biomarcadores em crianças e famílias brasileiras para avaliação do bem-estar e risco nutricional.
 Objetivo de Desenvolvimento Sustentável: 3 – Saúde e Bem-Estar
 
@@ -141,6 +144,18 @@ O script `populate_db.py`:
 - Converte campos booleanos e numéricos corretamente
 - Encapsula toda a lógica de ETL (Extract-Transform-Load)
 
+## 🧠 Geração das Consultas
+
+As queries foram pensadas para responder as seguintes perguntas:
+
+1.  Qual a relação entre participação no setor agro e insegurança alimentar infantil?
+2.  Entre regiões cujo setor de serviços > 40 % do Valor Adicionado Bruto (VAB), onde se concentra a maior proporção de pessoas que relatam dificuldade de acesso a alimentos saudáveis?
+3.  Em quais regiões a procura por “consultório particular” ou “clínica privada” é mais frequente, e como esses percentuais se relacionam com os principais indicadores econômicos regionais (participação de serviços e indústria no VAB, PIB total e total de impostos)?
+4.  Como a renda familiar (em quartil) influencia o consumo de frutas e de ultraprocessados entre crianças (<18 anos)?
+5.  Em que medida a participação da indústria no VAB de cada região se associa à proporção de crianças (menores de 18 anos) matriculadas em escola ou creche?
+
+---
+
 ## 🚀 Como Executar
 
 ### Pré-requisitos
@@ -161,20 +176,11 @@ PGDATABASE=nome_do_banco
 ```
 
 2. Crie o banco de dados no pgAdmin4 com os dados do passo anterior;
-3. Execute uma Query no seu banco de dados com o script em `modelo_fisico.sql`;
+3. Execute uma Query no "Query Tool Workspace" do seu banco de dados no pgAdmin4 com o script em `modelo_fisico.sql`;
 4. Execute o script de população `populate_db.py`;
+5. Execute o código de consultas `pythonquery.py` ou rode cada query da pasta `query` no "Query Tool Workspace" do pgAdmin4;
+6. Os resultados observados serão como os observados na pasta `resultados_queries`.
 
-## 🧠 Geração das Consultas
-
-As queries foram pensadas para responder as seguintes perguntas:
-
-1.  Qual a relação entre participação no setor agro e insegurança alimentar infantil?
-2.  Entre regiões cujo setor de serviços > 40 % do Valor Adicionado Bruto (VAB), onde se concentra a maior proporção de pessoas que relatam dificuldade de acesso a alimentos saudáveis?
-3.  Em quais regiões a procura por “consultório particular” ou “clínica privada” é mais frequente, e como esses percentuais se relacionam com os principais indicadores econômicos regionais (participação de serviços e indústria no VAB, PIB total e total de impostos)?
-4.  Como a renda familiar (em quartil) influencia o consumo de frutas e de ultraprocessados entre crianças (<18 anos)?
-5.  Em que medida a participação da indústria no VAB de cada região se associa à proporção de crianças (menores de 18 anos) matriculadas em escola ou creche?
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 
