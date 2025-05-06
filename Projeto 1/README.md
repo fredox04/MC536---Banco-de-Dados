@@ -22,7 +22,7 @@ Fonte dos datasets:
 ![Modelo Relacional](modelos/modelo_relacional.jpg)
 
 ### 3. Modelo Físico (e o DDL)
-![Modelo Relacional](modelos/modelo_relacional.jpg)
+![Modelo Físico](modelos/modelo_fisico.jpg)
 
 ```sql
 BEGIN;
