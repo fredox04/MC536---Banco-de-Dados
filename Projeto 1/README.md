@@ -1,7 +1,9 @@
 # 🌎MC 536 - Projeto 1 de Banco de Dados:
 
-ID do grupo: 13
+ID do grupo: 13.
+
 Frederico Jon Campos RA:243387
+
 Vinicius Brito Santos Oliveira Carneiro RA:244354
 
 Tema do projeto: Análise de fatores econômicos e biomarcadores em crianças e famílias brasileiras para avaliação do bem-estar e risco nutricional.
