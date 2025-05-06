@@ -19,9 +19,11 @@ Fonte dos datasets:
 ![Modelo Conceitual](modelos/modelo_conceitual.jpg)
 
 ### 2. Modelo Relacional
+![Modelo Relacional](modelos/modelo_relacional.jpg)
 
+### 3. Modelo Físico (e o DDL)
+![Modelo Relacional](modelos/modelo_relacional.jpg)
 
-### 3. Modelo Físico (DDL)
 ```sql
 BEGIN;
 
