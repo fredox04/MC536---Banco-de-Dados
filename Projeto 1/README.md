@@ -11,10 +11,17 @@ Objetivo de Desenvolvimento Sustentável: 3 – Saúde e Bem-Estar
 
 Este projeto tem como objetivo modelar, popular e consultar um banco de dados relacional que integra informações econômicas e sociais das regiões brasileiras, com foco em indicadores como participação setorial (agro, indústria, serviços), insegurança alimentar infantil e dificuldades de acesso a serviços.
 
-Fonte dos datasets: 
+
+---
+
+### Escolha dos datasets
+
+Os seguintes datasets foram escolhidos (arquivos na pasta `datasets`:
+
 - https://dados.gov.br/dados/conjuntos-dados/estudo-nacional-de-alimentacao-e-nutricao-infantil-enani-2019
 - https://sidra.ibge.gov.br/tabela/5938 
 
+Davido a alguns erros nos datasets originais, eles precisaram ser tratados. Os datasets tratados encontram se na pasta `datasets_tratados`
 
 ---
 
