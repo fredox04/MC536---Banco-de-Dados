@@ -28,10 +28,10 @@ Davido a alguns erros nos datasets originais, eles precisaram ser tratados. Os d
 ## 🧱 Componentes Desenvolvidos
 
 ### 1. Modelo Conceitual
-![Modelo Conceitual](modelos/modelo_conceitual.jpg)
+![Modelo Conceitual](modelos/modelo-conceitual.jpg)
 
 ### 2. Modelo Relacional
-![Modelo Relacional](modelos/modelo_relacional.jpg)
+![Modelo Relacional](modelos/modelo-relacional.jpg)
 
 ### 3. Modelo Físico (e o DDL)
 ![Modelo Físico](modelos/modelo_fisico.jpg)
