@@ -173,4 +173,4 @@ if _name_ == "_main_":
     main(args.economy, args.enani, args.batch_size, not args.quiet)
 ```
 ## Consultas
-Para rodar as consultas, crie um *playground* e rode cada consulta!
+Para rodar as consultas, crie um *playground* e rode cada consulta que está na pasta `consultas`
