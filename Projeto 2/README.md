@@ -1,4 +1,4 @@
-# 🌎MC 536 - Projeto 1 de Banco de Dados:
+# 🌎MC 536 - Projeto 2 de Banco de Dados:
 
 ID do grupo: 13.
 
