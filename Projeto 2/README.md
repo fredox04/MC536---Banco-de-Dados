@@ -65,7 +65,7 @@ except OperationFailure:
 
 ### Modelagem e População do Banco com Python
 
-Rode o código `modelar+popular.py` na mesma pasta que os datasets e o arquivo `.env` :
+Rode o código `modelar+popular.py` na mesma pasta que os datasets e o arquivo `.env` com as devidas alterações:
 
 ```python
 import os
@@ -172,3 +172,5 @@ if _name_ == "_main_":
 
     main(args.economy, args.enani, args.batch_size, not args.quiet)
 ```
+## Consultas
+Para rodar as consultas, crie um *playground* e rode cada consulta!
