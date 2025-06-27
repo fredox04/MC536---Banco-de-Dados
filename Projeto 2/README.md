@@ -38,6 +38,39 @@ Requisitos Técnicos:
 ![Modelo Lógico](modelo_logico.jpg)
 
 ### Modelo Físico:
+```json
+{
+  "regional_economy": {
+    "bsonType": "object",
+    "required": ["regiao", "ano"],
+    "properties": {
+      "regiao": { "bsonType": "string" },
+      "ano": { "bsonType": "int" },
+      "UF": { "bsonType": "string" },
+      "variaveis": {
+        "bsonType": "object",
+        "additionalProperties": { "bsonType": "double" }
+      }
+    }
+  },
+
+  "child_nutrition": {
+    "bsonType": "object",
+    "required": ["nome_regiao", "situacao"],
+    "properties": {
+      "nome_regiao": { "bsonType": "string" },
+      "situacao": { "bsonType": "string" },
+      "idade": { "bsonType": "int" },
+      "sexo": { "bsonType": "string" },
+      "frequenta_creche_ou_escola": { "bsonType": "string" },
+      "morador_insuficiente": { "bsonType": "bool" },
+      "consome_alimentos_ultraprocessados": { "bsonType": "string" }
+    }
+  }
+}
+
+```
+Script: 
 ```python
 import os
 from pymongo import MongoClient, ASCENDING
