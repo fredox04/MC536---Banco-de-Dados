@@ -34,6 +34,8 @@ Requisitos Técnicos:
 | **Gerenciamento simplificado**                 | Atlas entrega métricas, auto-scaling, alertas, TLS 1.2 / FLE (criptografia de campo) e templates de CI/CD via Terraform.                                |
 
 ## 🧱 Componentes Desenvolvidos
+### Modelo Lógico
+![Modelo Lógico](modelo_logico.jpg)
 
 ### Modelo Físico:
 ```python
